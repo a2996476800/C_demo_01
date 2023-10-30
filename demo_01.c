@@ -96,26 +96,38 @@
 
 //用函数的方式解决求和
 
-int Add(int x, int y)
-{
-	int z = 0;
-	z = x + y;
-	return z;
-}
-
+//int Add(int x, int y)
+//{
+//	int z = 0;
+//	z = x + y;
+//	return z;
+//}
+//
+//
+//int main()
+//{
+//	int num1 = 0;
+//	int num2 = 0;
+//	int num3 = 0;
+//	int num4 = 0;
+//	scanf("%d%d", &num1, &num2);
+//	int sum1 = Add(num1, num2);
+//	printf("sum1 = %d", sum1);
+//	scanf("%d%d", &num3, &num4);
+//	int sum2 = Add(num1, num2);
+//	printf("sum2 = %d", sum2);
+//	return 0;
+//}
 
 int main()
 {
-	int num1 = 0;
-	int num2 = 0;
-	int num3 = 0;
-	int num4 = 0;
-	scanf("%d%d", &num1, &num2);
-	int sum1 = Add(num1, num2);
-	printf("sum1 = %d", sum1);
-	scanf("%d%d", &num3, &num4);
-	int sum2 = Add(num1, num2);
-	printf("sum2 = %d", sum2);
+	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+	//char arr[5] = { 'a', 'b', 'c' };//不完全初始化，剩余默认为0
+	int i = 0;
+	while (i < 10)
+	{
+		printf("%d\n", arr[i]);
+		i++;
+	}
 	return 0;
 }
-
