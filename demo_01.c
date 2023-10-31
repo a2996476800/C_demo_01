@@ -117,17 +117,34 @@
 //	int sum2 = Add(num1, num2);
 //	printf("sum2 = %d", sum2);
 //	return 0;
+////}
+//
+//int main()
+//{
+//	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//	//char arr[5] = { 'a', 'b', 'c' };//不完全初始化，剩余默认为0
+//	int i = 0;
+//	while (i < 10)
+//	{
+//		printf("%d\n", arr[i]);
+//		i++;
+//	}
+//	return 0;
+//}
+
+//
+//int main()
+//{
+//	int a = 10;
+//	int b = a++;//先用后加
+//	//int a = 10;
+//	//int b = ++a;//先加后用
+//	printf("%d\n%d\n", b, a);
+//	return 0;
 //}
 
 int main()
 {
-	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
-	//char arr[5] = { 'a', 'b', 'c' };//不完全初始化，剩余默认为0
-	int i = 0;
-	while (i < 10)
-	{
-		printf("%d\n", arr[i]);
-		i++;
-	}
+
 	return 0;
 }
