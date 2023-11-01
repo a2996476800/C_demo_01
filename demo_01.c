@@ -145,6 +145,7 @@
 
 int main()
 {
-	int a = 0;
+	int a = (int)3.14 ;//强制类型转换
+	printf("%d\n", a);
 	return 0;
 }
