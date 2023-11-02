@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS 1
+
 #include <stdio.h>
 ///*
 //int main()
@@ -357,32 +357,62 @@
 //}
 //
 //创建学生类型
-struct stu
-{
-	char name[20];//成员变量
-	int age;
-	double score;
-};
+//struct stu
+//{
+//	char name[20];//成员变量
+//	int age;
+//	double score;
+//};
+//
+////创建书类型
+//struct book
+//{
+//	char name[20];
+//	float price;
+//	char id[30];
+//};
+//
+//int main()
+//{
+//	struct stu s = { "张三", 20, 85.5 };//结构体的创建与初始化
+//	printf("1：%s %d %lf\n", s.name, s.age, s.score);//结构体变量.成员变量
+//
+//	struct stu* ps = &s;
+//	printf("2: %s %d %lf\n", (*ps).name, (*ps).age, (*ps).score);
+//
+//	printf("3: %s %d %lf\n", ps->name, ps->age, ps-> score);//箭头左侧必须为结构体指针，右侧必须为成员变量名
+//
+//	return 0;
+//}
 
-//创建书类型
-struct book
-{
-	char name[20];
-	float price;
-	char id[30];
-};
+//int Max(int x, int y)
+//{
+//	if (x > y)
+//		return x;
+//	else
+//		return y;
+//}
+//
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	scanf("%d %d", &a, &b);
+//
+//	int m = Max(a, b);
+//	printf("%d\n", m);
+//
+//	return 0;
+//}
+
 
 int main()
 {
-	struct stu s = { "张三", 20, 85.5 };//结构体的创建与初始化
-	printf("1：%s %d %lf\n", s.name, s.age, s.score);//结构体变量.成员变量
-
-	struct stu* ps = &s;
-	printf("2: %s %d %lf\n", (*ps).name, (*ps).age, (*ps).score);
-
-	printf("3: %s %d %lf\n", ps->name, ps->age, ps-> score);//箭头左侧必须为结构体指针，右侧必须为成员变量名
-
+	int m = 0;
+	scanf("%d", &m);
+	if (m % 5 == 0)
+		printf("YES\n");
+	else
+		printf("NO\n");
 	return 0;
 }
-
-
