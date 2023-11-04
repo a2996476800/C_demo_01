@@ -405,14 +405,197 @@
 //	return 0;
 //}
 
+//
+//int main()
+//{
+//	int m = 0;
+//	scanf("%d", &m);
+//	if (m % 5 == 0)
+//		printf("YES\n");
+//	else
+//		printf("NO\n");
+//	return 0;
+//}
+//
+//
+//int main()
+//{
+//	int age = 180;
+//
+//	if (age < 18)
+//		printf("少年\n");
+//	else if (age >= 18 && age < 26)
+//		printf("青年\n");
+//	else if (age >= 26 && age < 40)
+//		printf("壮年\n");
+//	else if (age >= 60 && age <= 100)
+//		printf("老年\n");
+//	else
+//		printf("老不死\n");
+//	
+//	
+//	if (age >= 18)
+//	{
+//		printf("成年\n");
+//	}
+//	else
+//	{
+//		printf("未成年\n");
+//		printf("不能谈对象\n");
+//	}
+//	return 0;
+// }
+
+
+
+//int main()
+//{
+//	int num = 15;
+//	if (num % 2 == 1)
+//		printf("奇数\n");
+//	else
+//		printf("偶数\n");
+//
+//	return 0;
+//}
+
+
+//输出1-100之间的奇数
+//int main()
+//{
+//	int i = 0;
+//	for (i = 1; i <= 100; i++)
+//	{
+//		if (i % 2 == 1)
+//			printf("%d\n", i);
+//	}
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int day = 0;
+//	scanf("%d", &day);
+//	switch (day)
+//	{
+//	case 1:
+//		printf("星期一\n");
+//		break;
+//	case 2:
+//		printf("星期二\n");
+//		break;
+//	case 3:
+//		printf("星期三\n");
+//		break;
+//	case 4:
+//		printf("星期四\n");
+//		break;
+//	case 5:
+//		printf("星期四\n");
+//		break;
+//	case 6:
+//		printf("星期五\n");
+//		break;
+//	case 7:
+//		printf("星期天\n");
+//		break;
+//	default:
+//		printf("请输入1-7的数字\n");
+//		break;
+//	}
+//	//case决定入口，break决定出口
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int i = 1;
+	//在while循环中，break用于永久的终止循环
+	
+	//在while循环中，continue用于跳过本次循环conticue后面的代码
+	//直接去判断部分，看是否进行下一次循环
+
+
+	/*while (i <= 10)
+	{
+		if (i == 5)
+			continue;
+		printf("%d ", i);
+		i++;
+	}*/
+
+
+	/*while (i <= 10)
+	{
+		if (i == 5)
+			break;
+		printf("%d ", i);
+		i++;
+	}*/
+
+	/*return 0;
+}*/
+
+//EOF - end of file - 文件结束标志
+//int main()
+//{
+//	int ch = getchar();
+//	//printf("%c\n", ch);
+//	putchar(ch);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int ch = 0;
+//	//ctrl+z - getchar 读取结束
+//	while ((ch = getchar()) != EOF)
+//	{
+//		putchar(ch);
+//	}
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	char password[20] = { 0 };
+//	printf("请输入密码:>");
+//	scanf("%s", password);
+//	printf("请确认密码(Y/N):>");
+//	//清理缓冲区
+//	//getchar();//处理'\n'
+//	int tmp = 0;
+//	while ((tmp = getchar()) != '\n')
+//	{
+//		;
+//	}
+//	int ch = getchar();
+//	if (ch == 'Y')
+//	{
+//		printf("确认成功\n");
+//	}
+//	else
+//	{
+//		printf("确认失败\n");
+//	}
+//	return 0;
+//}
+
 
 int main()
 {
-	int m = 0;
-	scanf("%d", &m);
-	if (m % 5 == 0)
-		printf("YES\n");
-	else
-		printf("NO\n");
+	int ch = 0;
+	while ((ch = getchar()) != EOF)
+	{
+		if (ch < '0' || ch > '9')
+			continue;
+
+		putchar(ch);
+	}
+
 	return 0;
-}//
+}
