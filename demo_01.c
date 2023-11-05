@@ -722,35 +722,55 @@
 
 //在一个有序数组中查找具体的某个数字n
 //折半/二分查找法
+//int main()
+//{
+//	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int k = 7;
+//
+//	int sz = sizeof(arr) / sizeof(arr[0]);//数组元素个数
+//	int left = 0;
+//	int right = sz - 1;
+//	
+//	while (left <= right)
+//	{
+//		int mid = (left + right) / 2;
+//		if (arr[mid] < k)
+//		{
+//			left = mid + 1;
+//		}
+//		else if (arr[mid] > k)
+//		{
+//			right = mid - 1;
+//		}
+//		else
+//		{
+//			printf("已找到：%d\n", mid);
+//			break;
+//		}
+//	}
+//	if (left > right)
+//	{
+//		printf("找不到\n");
+//	}
+//	return 0;
+// }
+
+
 int main()
 {
-	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
-	int k = 7;
-
-	int sz = sizeof(arr) / sizeof(arr[0]);//数组元素个数
+	char arr1[] = "welcome to synu!!!!!";
+	char arr2[] = "####################";
 	int left = 0;
-	int right = sz - 1;
-	
-	while (left <= right)
+	int right = strlen(arr1) - 1;
+
+	while (left<=right)
 	{
-		int mid = (left + right) / 2;
-		if (arr[mid] < k)
-		{
-			left = mid + 1;
-		}
-		else if (arr[mid] > k)
-		{
-			right = mid - 1;
-		}
-		else
-		{
-			printf("已找到：%d\n", mid);
-			break;
-		}
+		arr2[left] = arr1[left];
+		arr2[right] = arr1[right];
+		printf("%s\n", arr2);
+		left++;
+		right--;
 	}
-	if (left > right)
-	{
-		printf("找不到\n");
-	}
+
 	return 0;
- }
+}
